@@ -1,8 +1,8 @@
 package com.example.mbisu.tradetool;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -27,9 +27,11 @@ public class MainActivity extends AppCompatActivity {
 
         setSupportActionBar(toolbar);
 
-        if (getSupportActionBar()!=null)
+        if (getSupportActionBar() != null) {
 
-        getSupportActionBar().setTitle("");
+            getSupportActionBar().setTitle("");
+        
+        }
 
         startday = findViewById(R.id.startday);
         upload = findViewById(R.id.upload);
