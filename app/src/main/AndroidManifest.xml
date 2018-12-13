@@ -19,7 +19,8 @@
         <activity android:name=".Authentification.LoginActivity" />
         <activity android:name=".StartDay.StartDayActivity" />
         <activity android:name=".StartDay.RegisterStockActivity" />
-        <activity android:name=".Profile.ProfileActivity"></activity>
+        <activity android:name=".Profile.ProfileActivity" />
+        <activity android:name=".Profile.EditProfileActivity"></activity>
     </application>
 
 </manifest>

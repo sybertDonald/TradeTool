@@ -1,8 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.mbisu.tradetool.Profile.ProfileActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <include
+        android:id="@+id/toolbarprofile"
+        layout="@layout/toolbar" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/logout"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/toolbarprofile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/imageVIew"
+        android:padding="2dp"
+        android:src="@drawable/logouticon"
+        app:civ_border_color="@color/colorPrimaryDark"
+        app:civ_border_width="3dp" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/edit"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/toolbarprofile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/imageVIew"
+        android:padding="2dp"
+        android:src="@drawable/editicon"
+        app:civ_border_color="@color/colorPrimaryDark"
+        app:civ_border_width="3dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilepic"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/toolbarprofile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/imageVIew"
+        android:padding="2dp"
+        android:src="@drawable/usernameic"
+        app:civ_border_color="@color/colorPrimaryDark"
+        app:civ_border_width="3dp" />
+
+    <TextView
+        android:id="@+id/usernameprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilepic"
+        android:gravity="center"
+        android:text="NUMBER"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/logout"
+        android:layout_alignRight="@+id/logout"
+        android:layout_below="@+id/logout"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:text="logout"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edit"
+        android:layout_alignRight="@+id/edit"
+        android:layout_below="@+id/edit"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:text="edit"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernameprofile"
+        android:layout_marginTop="5sp"
+        android:background="@color/colorPrimary">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/sms"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/imageVIew"
+            android:padding="1dp"
+            android:src="@drawable/sms"
+            app:civ_border_color="@color/colorPrimaryDark"
+            app:civ_border_width="2dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_toEndOf="@+id/sms"
+            android:layout_toRightOf="@+id/sms"
+            android:gravity="center"
+            android:text="MY MESSAGES"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
