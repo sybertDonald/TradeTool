@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         if (getSupportActionBar() != null) {
 
             getSupportActionBar().setTitle("");
-        
+
         }
 
         startday = findViewById(R.id.startday);
