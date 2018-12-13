@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">TradeTool</string>
+    <string name="titletoolbar">HOMEPAGE</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+</resources>
